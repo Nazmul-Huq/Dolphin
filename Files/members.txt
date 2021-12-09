@@ -1,0 +1,9 @@
+1,Heidi Jørgensen,22334480,heidi.com@mail.com,22,active,no
+2,Jimmy Davidson,55738521,thatjimbo@mail.com,17,active,yes
+3,Sanne Christansen,83196347,sanne.hansen@mail.com,67,passive,no
+4,Henning Karlsen,37648961,henning.theman@mail.com,56,passive,no
+5,Kirsten Walter,33427580,k.lyngsted@mail.com,34,active,yes
+6,Magnus Ibsen,65185209,the.man@mail.com,13,active,no
+7,Natacha Collins,87491264,n.collins2@mail.com,18,active,yes
+8,Casper Nielsen,85395571,capper69@mail.com,21,active,no
+9,Lise Wolf,56442982,wolf.lise@mail.com,66,active,no
