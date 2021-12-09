@@ -17,6 +17,11 @@ public class Delfinen {
 
     public static void main(String[] args) throws FileNotFoundException {
 
+        /****************************************************************************
+         * to run this program will need to add "pdfbox-app-3.0.0-alpha2.jar" in the library
+         * can be downloaded from: https://pdfbox.apache.org/download.html
+         ****************************************************************************/
+
         // create an instance of Delfinen
         Delfinen delfinen = new Delfinen();
 
