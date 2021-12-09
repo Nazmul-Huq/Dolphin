@@ -4,7 +4,9 @@ import Admin.TrainingResult;
 import FileHandler.DelfinFileWriter;
 import InputOutput.InputHandler;
 
-
+/**
+ * written by Nazmul
+ */
 public class AddInformation {
 
     InputHandler inputHandler = new InputHandler();
@@ -26,24 +28,6 @@ public class AddInformation {
         delfinFileWriter.saveTrainingResult(newTrainingResult);
 
         //System.out.println(newTrainingResult);
-    }
-
-    //
-    public void addCompetitionSwimmer(){
-        //    public CompetitionSwimmer(int id, String fullName, int phoneNumber, String email, String address,
-/*        //    int age, String membershipType, int trainerId, ArrayList<Integer> trainingResults) {
-        setId();
-        setFullName();
-        setPhoneNumber();
-        setEmail();
-        setAddress();
-        setAge();
-        setMembershipType();
-        setTrainerId();
-        setTrainingResults();*/
-
-        //CompetitionSwimmer competitionSwimmer = new CompetitionSwimmer(id, fullName, phoneNumber, email, address, age, membershipType, trainerId, trainingResults);
-        //System.out.println(competitionSwimmer);
     }
 
 

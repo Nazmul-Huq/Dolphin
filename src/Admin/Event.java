@@ -1,6 +1,9 @@
 package Admin;
 
-public class Event {//Mo//
+/**
+ * written by Mohammad
+ */
+public class Event {
 
     //Attributes
     private String Date;

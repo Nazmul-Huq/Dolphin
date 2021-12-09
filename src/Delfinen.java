@@ -19,9 +19,7 @@ public class Delfinen {
 
         // create an instance of Delfinen
         Delfinen delfinen = new Delfinen();
-        //Login check
-        LoginController loginControl = new LoginController();
-        loginControl.verifyLogin();
+
 
 
         /**
@@ -33,6 +31,12 @@ public class Delfinen {
          * identify the actor (Chairman/Bookkeeper/Trainer), who want to perform a task
          */
         int actor = delfinen.menu.getActor();
+
+        /**
+         * check login information
+         */
+        LoginController loginControl = new LoginController();
+        loginControl.verifyLogin();
 
 
         /**

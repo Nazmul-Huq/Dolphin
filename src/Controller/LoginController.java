@@ -23,6 +23,15 @@ public class LoginController {
 
         while (!found) {
 
+            System.out.println("--------------------------------------------------");
+            for (int i = 0; i < loginInformation.size(); i++) {
+                System.out.println(loginInformation.get(i));
+            }
+            System.out.println("--------------------------------------------------");
+            System.out.println("All login information. Use right one from above to login");
+
+
+
             System.out.println("Please write your username...");
             String username = scan.next();
             System.out.println("Please write your password...");

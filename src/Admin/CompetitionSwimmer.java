@@ -1,6 +1,8 @@
 package Admin;
 
-
+/**
+ * written by Nazmul
+ */
 public class CompetitionSwimmer extends ActiveMember{
 
     /**

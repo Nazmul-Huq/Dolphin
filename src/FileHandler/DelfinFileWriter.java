@@ -35,6 +35,7 @@ public class DelfinFileWriter {
     }
 
 
+    // written by Mohammad
     public void eventList(int[] swimmerEvent){
         try {
             File file = new File("Files/event.txt");
@@ -46,7 +47,7 @@ public class DelfinFileWriter {
             System.out.println("Failed to add file"); }
     }
 
-
+    // written by Mohammad
     public void swimmerTeam(int[] swimmerEvent){
         try {
             File file = new File("Files/teams.txt");
@@ -77,6 +78,7 @@ public class DelfinFileWriter {
             System.out.println("Failed to add file"); }
     }
 
+    // written by Mohammad
     public void disciplines(int[] swimmerDisciplines){
         try {
             File file = new File("Files/disciplineTraining.txt");
@@ -146,6 +148,9 @@ public class DelfinFileWriter {
         }
     }
 
+    /**
+     * SARA'S CODE
+     */
     //Save new member info:
     public void addNewMember(ActiveMember memberInfo) {
 
@@ -159,6 +164,7 @@ public class DelfinFileWriter {
             System.out.println("Failed to add file"); }
     }
 
+    //Save new event info
     public void newEvent(Event newEvent) {
         try {
             File file = new File("Files/event.txt");
@@ -170,6 +176,7 @@ public class DelfinFileWriter {
             System.out.println("Failed to add file"); }
     }
 
+    //Save new employee info
     public void addNewEmployee(Trainer newTrainer) {
         try {
             File file = new File("Files/employee.txt");
@@ -182,6 +189,8 @@ public class DelfinFileWriter {
     }
 
 
+
+    //Delete Member
     public void deleteMember(ArrayList<String> memberInfo) {
         try {
             File file = new File("Files/members.txt");
@@ -201,5 +210,28 @@ public class DelfinFileWriter {
             System.out.println("Failed to add file"); }
     }
 
+    //Delete employee
+    public void deleteEmployee(ArrayList<String> employeeInfo) {
+        try {
+            File file = new File("Files/employee.txt");
+            FileWriter deleteAllData = new FileWriter(file, false);
+            deleteAllData.close();
+
+
+
+            FileWriter fr = new FileWriter(file, true);
+            for (int i = 0; i < employeeInfo.size(); i++) {
+                String info = employeeInfo.get(i);
+                fr.write(info + "\n");
+            }
+            fr.close();
+            System.out.println("Data saved successfully");
+        } catch (Exception e) {
+            System.out.println("Failed to add file"); }
+    }
+
+    /**
+     * SARA'S CODE END
+     */
 
 } // class ends here

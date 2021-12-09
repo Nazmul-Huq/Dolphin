@@ -1,7 +1,9 @@
 package Admin;
 
 
-
+/**
+ * written by Nazmul
+ */
 public class ActiveMember extends Admin{
 
     /**

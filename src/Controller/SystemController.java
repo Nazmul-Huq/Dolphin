@@ -9,13 +9,16 @@ import Statistics.Statistic;
 
 import java.io.FileNotFoundException;
 
+/**
+ * written by Nazmul
+ */
 public class SystemController {
 
     /**
      * instantiates necessary objects
      */
-    Chairman chairman = new Chairman(1,"Nanna Hansen", 99999999,"nanhans@live.dk", "Amager Strandvej 22");
-    Trainer trainer = new Trainer(1,"Felix Madsen",28349219,"Madsen23@hotmail.com","kongelunden 45");
+    Chairman chairman = new Chairman();
+    Trainer trainer = new Trainer();
     Statistic statistic = new Statistic();
     Menu menu = new Menu();
     BookKeeper bookKeeper = new BookKeeper();
@@ -72,23 +75,13 @@ public class SystemController {
                 break;
 
             case 4:
-                System.out.println("Chairman adding team");
-                //chairman.addTeam();
-                break;
-
-            case 5:
-                System.out.println("Chairman changing member");
-                break;
-            case 6:
-                System.out.println("Chairman changing membership");
-                break;
-            case 7:
                 System.out.println("Chairman deleting member");
                 chairman.deleteMember();
                 break;
 
-            case 8:
-                System.out.println("this option is under construction");
+            case 5:
+                System.out.println("Chairman deleting employee");
+                chairman.deleteEmployee();
                 break;
 
             case 9:
@@ -146,6 +139,7 @@ public class SystemController {
                 break;
 
             case 8:
+                // See best swimmer
                 int swimmingDiscipline = menu.getSwimmingDiscipline();
                 statistic.seeBestSwimmer(swimmingDiscipline);
                 break;
@@ -187,22 +181,6 @@ public class SystemController {
             case 4:
                 System.out.println("Bookkeeper calculating future income");
                 bookKeeper.calculateFutureIncome();
-                break;
-
-            case 5:
-                System.out.println("this option is under construction");
-                break;
-
-            case 6:
-                System.out.println("this option is under construction");
-                break;
-
-            case 7:
-                System.out.println("this option is under construction");
-                break;
-
-            case 8:
-                System.out.println("this option is under construction");
                 break;
 
             case 9:

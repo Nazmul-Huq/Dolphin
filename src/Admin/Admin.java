@@ -11,6 +11,10 @@ public class Admin {
     private String email;
     private String address;
 
+    // make an empty constructor
+    public Admin() {
+    }
+
     /**
      * constructor
      */

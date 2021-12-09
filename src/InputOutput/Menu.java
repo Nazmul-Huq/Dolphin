@@ -62,7 +62,7 @@ public class Menu {
      * print the options that a chairman can do in the system
      */
     private void printChairmanMenuOptions(){
-        System.out.println("1. Add member, 2. Add new employee, 3. Add event, 4. Add team,  5. change Member 6. Change membership 7. Delete member, 9. Exit app");
+        System.out.println("1. Add new member, 2. Add new employee, 3. Add event, 4. Delete Member,  5. Delete Employee 9. Exit app");
     }
 
     /**

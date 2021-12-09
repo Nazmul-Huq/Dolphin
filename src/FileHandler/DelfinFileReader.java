@@ -85,13 +85,13 @@ public class DelfinFileReader {
         return memberInformation;
     }
 
+    /**
+     * SARA'S CODE
+     */
+    //Delete member from system
     public void deleteMember(int id) {
 
         ArrayList<String> memberInformation = new ArrayList();
-
-        // line 1 : id 1
-        // line 2 : id 2
-        // line 3 : id 3
 
         try {
             Scanner scanFile = new Scanner(new File("Files/members.txt"));
@@ -107,10 +107,38 @@ public class DelfinFileReader {
             fileWriter.deleteMember(memberInformation);
             System.out.println("Deleted successfully");
         } catch (FileNotFoundException e) {
-            System.out.println("File not found!");
+            System.out.println("File could not be found!");
             e.printStackTrace();
         }
 
     }
+
+    public void deleteEmployee(int id) {
+
+        ArrayList<String> employeeInformation = new ArrayList();
+
+        try {
+            Scanner scanFile = new Scanner(new File("Files/employee.txt"));
+
+            while (scanFile.hasNextLine()) {
+                String employeeDetails = scanFile.nextLine();
+                String[] employeeInfo = employeeDetails.split(",");
+                int employeeId = Integer.parseInt(employeeInfo[0]);
+                if (employeeId != id) {
+                    employeeInformation.add(employeeDetails);
+                }
+            }
+            fileWriter.deleteEmployee(employeeInformation);
+            System.out.println("Deleted successfully");
+        } catch (FileNotFoundException e) {
+            System.out.println("File could not be found!");
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
+     * SARA'S CODE END
+     */
 
 }

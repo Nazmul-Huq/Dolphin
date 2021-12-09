@@ -6,7 +6,12 @@ import FileHandler.DelfinFileWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Trainer extends Admin{//Mo wrote this//
+/**
+ * written by Mohammad
+ */
+public class Trainer extends Admin{
+
+
 
     AddInformation information = new AddInformation();
     //Attributes
@@ -27,6 +32,10 @@ public class Trainer extends Admin{//Mo wrote this//
     static Event event = new Event("22/02/2021",1400,"DGI byen",1);
 
 
+    // make an empty constructor
+    public Trainer() {
+    }
+
 
     /**
      * constructor
@@ -37,8 +46,10 @@ public class Trainer extends Admin{//Mo wrote this//
      * @param email
      * @param address
      */
-    public Trainer(int id, String fullName, int phoneNumber, String email, String address) {
+    public Trainer(int id, String fullName, int phoneNumber, String email, String address, String username, int password) {
         super(id, fullName, phoneNumber, email, address);
+        this.username = username;
+        this.password = password;
     }
 
 
@@ -209,8 +220,6 @@ public class Trainer extends Admin{//Mo wrote this//
 
     @Override
     public String toString() {
-        return "username='" + username + '\'' +
-                ", password=" + password +
-                '}';
+        return  super.toString() +  "," +username + "," +  password;
     }
 }
